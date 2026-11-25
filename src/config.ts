@@ -2,7 +2,7 @@
 export const site = {
   name: 'agi’s notes',
   description: 'On this Pale Blue Dot, we dream, we doubt, we love, and we create.',
-  url: 'https://agiiga.com',
+  url: 'https://notes.agiiga.com',
   locale: 'cn', // BCP 47, e.g. 'en', 'ko'
   author: 'agioracle', // Fictional demo author. Replace with your name
   defaultOgImage: '/og-default.png',
@@ -29,7 +29,7 @@ export const monoline = {
   // The source gutter: Markdown markers beside headings, quotes, lists, code and footnotes.
   // false hides them (the markup keeps its data-md attributes).
   gutter: true,
-  homeCount: 12, // rows in the home table; the rest are on /notes
+  homeCount: 14, // rows in the home table; the rest are on /notes
 };
 
 export const features = {
@@ -37,8 +37,9 @@ export const features = {
 };
 
 export const analytics = {
-  provider: null as null | 'plausible' | 'ga4' | 'umami',
-  id: '',
+  // provider: null as null | 'plausible' | 'ga4' | 'umami',
+  provider: 'umami',
+  id: '9d1cdd75-34a5-4339-aca3-ab4d4b23be10',
   // Self-hosted Plausible or Umami: the origin serving the script, no trailing slash.
   // Empty means the hosted service. GA4 ignores it.
   host: '',
